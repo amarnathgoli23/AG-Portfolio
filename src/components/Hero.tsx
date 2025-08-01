@@ -9,14 +9,15 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+       <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-background"></div>
       {/* Background */}
-      <div 
+      {/* <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBg})` }}
       >
         <div className="absolute inset-0 bg-gradient-hero" />
         <div className="absolute inset-0 bg-background/70" />
-      </div>
+      </div> */}
       
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
@@ -32,7 +33,9 @@ const Hero = () => {
           </p>
           
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <a 
+           href="mailto:amarnathgoli23@gmail.com"
+           className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Button size="lg" className="bg-gradient-primary hover:shadow-glow transition-all duration-300">
               <Mail className="mr-2 h-4 w-4" />
               Get In Touch
@@ -40,7 +43,7 @@ const Hero = () => {
             <Button variant="outline" size="lg" className="border-primary/50 hover:border-primary transition-all duration-300">
               View My Work
             </Button>
-          </div>
+          </a>
           
           {/* Social Links */}
           <div className="flex justify-center space-x-6 mb-12">

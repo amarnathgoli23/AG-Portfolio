@@ -40,11 +40,7 @@ const Footer = () => {
           </div>
           
           {/* Made with love */}
-          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <span>Made with</span>
-            <Heart className="h-4 w-4 text-primary animate-pulse" />
-            <span>using React & Tailwind</span>
-          </div>
+         
         </div>
       </div>
     </footer>

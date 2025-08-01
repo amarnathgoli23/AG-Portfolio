@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import profileImg from "@/assets/profile.jpg";
+import profileImg from "@/assets/profile.jpeg";
 
 const About = () => {
   return (
@@ -14,44 +14,28 @@ const About = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Profile Image */}
-          <div className="animate-slide-in-left">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-primary rounded-lg rotate-6 opacity-20"></div>
-              <img 
-                src={profileImg} 
-                alt="Amarnath Goli" 
-                className="relative rounded-lg shadow-card w-full max-w-md mx-auto"
-              />
-            </div>
-          </div>
-          
-          {/* About Content */}
-          <div className="animate-fade-in">
-            <Card className="bg-gradient-card border-primary/20 shadow-card">
+        <div className="grid items-center">
+          {/* About Content - centered and full width */}
+          <div className="w-full flex justify-center animate-fade-in">
+            <Card className="bg-gradient-card border-primary/20 shadow-card w-full max-w-2xl">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-6 text-primary">
+                <h3 className="text-2xl font-semibold mb-6 text-primary text-center">
                   Frontend Engineer & Tech Enthusiast
                 </h3>
-                
-                <div className="space-y-4 text-foreground/90">
+                <div className="space-y-4 text-foreground/90 text-center">
                   <p>
                     Based in <span className="text-primary font-semibold">Hyderabad, India</span>, I'm a dedicated Software Engineer 
                     with over 3.5 years of experience specializing in frontend development.
                   </p>
-                  
                   <p>
                     At <span className="text-primary font-semibold">Vir Innovations Pvt. Ltd.</span>, I spearhead frontend architecture 
                     for real-time applications across robotics, IoT, and embedded platforms, working on mission-critical 
                     projects in defense and industrial automation.
                   </p>
-                  
                   <p>
-                    I have successfully delivered <span className="text-primary font-semibold">10+ cross-functional projects</span> including 
+                    I have successfully delivered <span className="text-primary font-semibold">6+ cross-functional projects</span> including 
                     Tactical Combat Robot systems, Smart Poultry monitoring applications, and AI surveillance platforms.
                   </p>
-                  
                   <div className="grid grid-cols-2 gap-4 mt-6 pt-6 border-t border-primary/20">
                     <div>
                       <h4 className="font-semibold text-primary mb-2">Experience</h4>
@@ -59,7 +43,7 @@ const About = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-primary mb-2">Projects</h4>
-                      <p className="text-sm text-muted-foreground">10+ Delivered</p>
+                      <p className="text-sm text-muted-foreground">6+ Delivered</p>
                     </div>
                     <div>
                       <h4 className="font-semibold text-primary mb-2">Location</h4>

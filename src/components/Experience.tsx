@@ -73,13 +73,6 @@ const Experience = () => {
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                   <p>
-                    Led <span className="font-semibold text-primary">mentoring for junior developers</span> and actively contributed to code reviews, testing, and deployment automation.
-                  </p>
-                </div>
-                
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                  <p>
                     Designed and implemented <span className="font-semibold text-primary">reusable UI components</span>, improving development velocity by 40% and enhancing code consistency across teams.
                   </p>
                 </div>
