@@ -23,10 +23,7 @@ const Hero = () => {
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-            Amarnath Goli
-          </h1>
-           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-            Amarnath Goli
+            Amarnath Goli portf
           </h1>
           <h2 className="text-xl md:text-2xl text-muted-foreground mb-4">
             Frontend Software Engineer
