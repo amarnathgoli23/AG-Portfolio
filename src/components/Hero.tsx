@@ -33,17 +33,27 @@ const Hero = () => {
           </p>
           
           {/* CTA Buttons */}
-          <a 
-           href="mailto:amarnathgoli23@gmail.com"
-           className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button size="lg" className="bg-gradient-primary hover:shadow-glow transition-all duration-300">
-              <Mail className="mr-2 h-4 w-4" />
-              Get In Touch
-            </Button>
-            <Button variant="outline" size="lg" className="border-primary/50 hover:border-primary transition-all duration-300">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+            <a href="mailto:amarnathgoli23@gmail.com">
+              <Button size="lg" className="bg-gradient-primary hover:shadow-glow transition-all duration-300">
+                <Mail className="mr-2 h-4 w-4" />
+                Get In Touch
+              </Button>
+            </a>
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="border-primary/50 hover:border-primary transition-all duration-300"
+              onClick={() => {
+                const el = document.getElementById('projects');
+                if (el) {
+                  el.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+            >
               View My Work
             </Button>
-          </a>
+          </div>
           
           {/* Social Links */}
           <div className="flex justify-center space-x-6 mb-12">
